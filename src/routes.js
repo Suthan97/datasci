@@ -47,7 +47,7 @@ var dashRoutes = [
     layout: "/admin",
   },
   {
-    path: "/notifications",
+    path: "/https://github.com/Suthan97/datasci",
     name: "Notifications",
     icon: "ui-1_bell-53",
     component: Notifications,
