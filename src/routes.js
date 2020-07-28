@@ -27,27 +27,27 @@ import UserPage from "views/UserPage.js";
 var dashRoutes = [
   {
     path: "/dashboard",
-    name: "Dashboard",
+    name: "Price Details",
     icon: "design_app",
     component: Dashboard,
     layout: "/admin",
   },
   {
     path: "/icons",
-    name: "Icons",
+    name: "More info of Rice",
     icon: "design_image",
     component: Icons,
     layout: "/admin",
   },
   {
     path: "/maps",
-    name: "Maps",
+    name: "Market Locations",
     icon: "location_map-big",
     component: Maps,
     layout: "/admin",
   },
   {
-    path: "/https://github.com/Suthan97/datasci",
+    path: "/notifications",
     name: "Notifications",
     icon: "ui-1_bell-53",
     component: Notifications,
@@ -62,14 +62,14 @@ var dashRoutes = [
   },
   {
     path: "/extended-tables",
-    name: "Table List",
+    name: "Price Table",
     icon: "files_paper",
     component: TableList,
     layout: "/admin",
   },
   {
     path: "/typography",
-    name: "Typography",
+    name: "Moere Details",
     icon: "design-2_ruler-pencil",
     component: Typography,
     layout: "/admin",
