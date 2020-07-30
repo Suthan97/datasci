@@ -69,7 +69,7 @@ class Dashboard extends React.Component {
               <Card className="card-chart">
                 <CardHeader>
                   <h5 className="card-category">Today rice Sales</h5>
-                  <CardTitle tag="h4">Shipped Products</CardTitle>
+                  <CardTitle tag="h4">Rice chart</CardTitle>
                   <UncontrolledDropdown>
                     <DropdownToggle
                       className="btn-round btn-outline-default btn-icon"
