@@ -152,7 +152,7 @@ const dashboardPanelChart = {
 
     return {
       labels: [
-        "JAN",
+        "first",
         "FEB",
         "MAR",
         "APR",
@@ -180,7 +180,7 @@ const dashboardPanelChart = {
           fill: true,
           backgroundColor: gradientFill,
           borderWidth: 2,
-          data: [50, 150, 100, 190, 130, 90, 150, 160, 120, 140, 190, 95],
+          data: [100, 0, 30, 25, 47, 130, 12, 45, 100, 100, 78, 95],
         },
       ],
     };

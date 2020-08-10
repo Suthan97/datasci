@@ -68,7 +68,7 @@ class Dashboard extends React.Component {
             <Col xs={12} md={4}>
               <Card className="card-chart">
                 <CardHeader>
-                  <h5 className="card-category">Today rice Sales</h5>
+                  <h5 className="card-category">Edited by suthan</h5>
                   <CardTitle tag="h4">Rice chart</CardTitle>
                   <UncontrolledDropdown>
                     <DropdownToggle
@@ -116,9 +116,9 @@ class Dashboard extends React.Component {
                       <i className="now-ui-icons loader_gear" />
                     </DropdownToggle>
                     <DropdownMenu right>
-                      <DropdownItem>Action</DropdownItem>
-                      <DropdownItem>Another Action</DropdownItem>
-                      <DropdownItem>Something else here</DropdownItem>
+                      <DropdownItem>This first</DropdownItem>
+                      <DropdownItem>this is secound</DropdownItem>
+                      <DropdownItem>This is third</DropdownItem>
                       <DropdownItem className="text-danger">
                         Remove data
                       </DropdownItem>
