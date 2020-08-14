@@ -30,6 +30,94 @@ function hexToRGB(hex, alpha) {
   }
 }
 
+//bar//
+const dashboard24HoursPerformanceChart = {
+  data: (canvas) => {
+    var ctx = canvas.getContext("2d");
+    var gradientFill = ctx.createLinearGradient(0, 170, 0, 50);
+    gradientFill.addColorStop(0, "rgba(128, 182, 244, 0)");
+    gradientFill.addColorStop(1, hexToRGB("#2CA8FF", 0.6));
+    return {
+      labels: [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ],
+      datasets: [
+        {
+          label: "Active Countries",
+          backgroundColor: gradientFill,
+          borderColor: "#2CA8FF",
+          pointBorderColor: "#FFF",
+          pointBackgroundColor: "#2CA8FF",
+          pointBorderWidth: 2,
+          pointHoverRadius: 4,
+          pointHoverBorderWidth: 1,
+          pointRadius: 4,
+          fill: true,
+          borderWidth: 1,
+          data: [80, 99, 86, 96, 123, 85, 100, 75, 88, 90, 123, 155],
+        },
+      ],
+    };
+  },
+  options: {
+    maintainAspectRatio: false,
+    legend: {
+      display: false,
+    },
+    tooltips: {
+      bodySpacing: 4,
+      mode: "nearest",
+      intersect: 0,
+      position: "nearest",
+      xPadding: 10,
+      yPadding: 10,
+      caretPadding: 10,
+    },
+    responsive: 1,
+    scales: {
+      yAxes: [
+        {
+          ticks: {
+            maxTicksLimit: 7,
+          },
+          gridLines: {
+            zeroLineColor: "transparent",
+            drawBorder: false,
+          },
+        },
+      ],
+      xAxes: [
+        {
+          display: 0,
+          ticks: {
+            display: false,
+          },
+          gridLines: {
+            zeroLineColor: "transparent",
+            drawTicks: false,
+            display: false,
+            drawBorder: false,
+          },
+        },
+      ],
+    },
+    layout: {
+      padding: { left: 0, right: 0, top: 15, bottom: 15 },
+    },
+  },
+};
+
 // ##############################
 // // // general variables for charts
 // #############################
@@ -336,7 +424,7 @@ const dashboardAllProductsChart = {
 // // // Dashboard view - Bar Chart - Card
 // #############################
 
-const dashboard24HoursPerformanceChart = {
+const dashboard24HoursPerformanceChart1 = {
   data: (canvas) => {
     var ctx = canvas.getContext("2d");
     var gradientFill = ctx.createLinearGradient(0, 170, 0, 50);
@@ -428,4 +516,5 @@ module.exports = {
   dashboardShippedProductsChart, // Chart for Dashboard view - Shipped Products Card
   dashboardAllProductsChart, // Chart for Dashboard view - All products Card
   dashboard24HoursPerformanceChart, // Chart for Dashboard view - 24 Hours Performance Card
+  dashboard24HoursPerformanceChart1
 };

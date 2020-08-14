@@ -1,16 +1,16 @@
 {
     "sqltools.connections": [
         {
-            "database": "DataScience1",
+            "database": "datascience",
             "driver": "MySQL",
             "mysqlOptions": {
                 "authProtocol": "default"
             },
-            "name": "Suthan",
-            "port": 3306,
+            "name": "suthantry11",
+            "port": 3308,
             "previewLimit": 50,
-            "server": "localhost",
-            "username": "Suthan97",
+            "server": "MySQL",
+            "username": "root",
             "password": ""
         }
     ]
